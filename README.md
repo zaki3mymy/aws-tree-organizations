@@ -49,7 +49,7 @@ This diagram is written by mermaid(flowchart). So, you can use it in your markdo
 
 ```bash
 rye build
-pip install dist/aws-tree-orgs-x.y.z.tar.gz
+rye install dist/aws-tree-orgs-x.y.z.tar.gz
 ```
 
 
