@@ -109,8 +109,9 @@ def _add_account_to_ou(account_id: str, org: Organization, client: boto3.client)
     ou.add_child_account(acc)
 
 
-def create_ou_tree() -> OrganizationalUnit:
-    client = boto3.client("organizations")
+def create_ou_tree(profile_name: str = None) -> OrganizationalUnit:
+    session = boto3.Session(profile_name=profile_name)
+    client = session.client("organizations")
     root = client.list_roots()["Roots"][0]
 
     policies = _list_policies_for_target(client, root["Id"])

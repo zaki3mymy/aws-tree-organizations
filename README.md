@@ -57,4 +57,7 @@ rye install dist/aws-tree-orgs-x.y.z.tar.gz
 
 ```bash
 aws-tree-orgs
+
+# or specify a profile
+aws-tree-orgs --profile <profile_name>
 ```
