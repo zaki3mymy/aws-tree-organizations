@@ -3,7 +3,7 @@ name = "aws-tree-orgs"
 version = "0.1.0"
 description = "Simple AWS Organizations Tree Viewer"
 authors = [
-    { name = "miyazaki", email = "kota_miyazaki@adforce.co.jp" }
+    { name = "zaki3mymy", email = "zaki.last@gmail.com" }
 ]
 dependencies = [
     "boto3>=1.34.73",
